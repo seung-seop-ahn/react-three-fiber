@@ -1,9 +1,11 @@
 import { Canvas } from "@react-three/fiber";
 import { Color } from "three";
+import { OrbitControls } from "@react-three/drei";
+import { Meshes } from "./Meshes";
 
 export const MainCanvas = () => {
   return (
-    <Canvas 
+    <Canvas
         gl={{ antialias: true }} 
         camera={{
             fov: 60,
@@ -15,11 +17,25 @@ export const MainCanvas = () => {
         scene={{
             background: new Color(0x000000),
         }}
+        shadows={"soft"}
     >
-      <mesh>
-        <boxGeometry args={[1, 1, 1]} />
-        <meshBasicMaterial color={0xff0000} />
-      </mesh>
+      <OrbitControls />
+      <directionalLight 
+        args={[0xffffff,5]}
+        position={[4, 4, 4]}
+        intensity={5}
+        shadow-camera-left={-25}
+        shadow-camera-right={25}
+        shadow-camera-top={25}
+        shadow-camera-bottom={-25}
+        shadow-camera-near={0.1}
+        shadow-camera-far={1000}
+        shadow-mapSize-width={4096}
+        shadow-mapSize-height={4096}
+        castShadow
+      />
+
+      <Meshes />
     </Canvas>
   );
 };
