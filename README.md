@@ -6,6 +6,7 @@
 
 ```sh
 $ npm create vite@latest react-three-fiber -- --template react
+$ npm install three @react-three/drei @react-three/fiber
 ```
 
 ## Usage
@@ -13,6 +14,9 @@ $ npm create vite@latest react-three-fiber -- --template react
 ```sh
 $ npm run dev
 ```
+## Reference
+
+- [React Three Fiber Docs](https://r3f.docs.pmnd.rs/getting-started/introduction)
 
 ## Author
 
