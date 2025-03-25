@@ -7,6 +7,7 @@
 ```sh
 $ npm create vite@latest react-three-fiber -- --template react
 $ npm install three @react-three/drei @react-three/fiber
+$ npm i @react-three/postprocessing
 ```
 
 ## Usage
