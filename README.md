@@ -14,9 +14,12 @@ $ npm install three @react-three/drei @react-three/fiber
 ```sh
 $ npm run dev
 ```
+
 ## Reference
 
 - [React Three Fiber Docs](https://r3f.docs.pmnd.rs/getting-started/introduction)
+- [GLTF to JSX](https://github.com/pmndrs/gltfjsx)
+  - `npx gltfjsx public/dancer.glb -o src/components/Dancer.jsx`
 
 ## Author
 
