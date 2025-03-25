@@ -17,7 +17,7 @@ export const Meshes = () => {
       >
           <meshStandardMaterial color={0xffffff} />
       </Plane>
-      <TorusKnot
+      {/* <TorusKnot
         args={[1, 0.2, 128, 128, 2, 3]}
         position={[-3, 1.6, 0]}
         castShadow
@@ -26,7 +26,7 @@ export const Meshes = () => {
         <meshStandardMaterial 
           color={0xff0000}
         />
-      </TorusKnot>
+      </TorusKnot> */}
     </>
   )
 };
