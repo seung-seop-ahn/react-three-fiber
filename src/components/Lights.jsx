@@ -1,4 +1,4 @@
-import { SpotLight, useHelper } from "@react-three/drei";
+import { SpotLight } from "@react-three/drei";
 import { useRef, useState, useEffect } from "react";
 import * as THREE from "three";
 export const Lights = () => {
@@ -14,20 +14,19 @@ export const Lights = () => {
   // const lightRef = useRef(null);
   // useHelper(lightRef, THREE.SpotLightHelper, 1, 0xffffff);
 
-  const targetRef = useRef(null);
-  const [target, setTarget] = useState();
-
-  useEffect(() => {
-    if(targetRef.current) {
-      setTarget(targetRef.current);
-    }
-  }, []);
+  // const targetRef = useRef(null);
+  // const [target, setTarget] = useState();
+  // useEffect(() => {
+  //   if(targetRef.current) {
+  //     setTarget(targetRef.current);
+  //   }
+  // }, []);
 
   return (
     <>
       {/* <ambientLight args={[0xffffff]} intensity={10}/> */}
-      {/* <directionalLight
-        ref={lightRef}
+      <directionalLight
+        // ref={lightRef}
         args={[0xffffff, 5]}
         position={[4, 4, 4]}
         intensity={5}
@@ -40,7 +39,7 @@ export const Lights = () => {
         shadow-mapSize-width={4096}
         shadow-mapSize-height={4096}
         castShadow
-      /> */}
+      />
       {/* <pointLight
         ref={lightRef}
         args={[0xffffff]}
@@ -68,7 +67,7 @@ export const Lights = () => {
         castShadow
         intensity={10}
       /> */}
-      <SpotLight
+      {/* <SpotLight
         args={[0xffffff]}
         position={[3, 3, 3]}
         castShadow
@@ -85,7 +84,7 @@ export const Lights = () => {
         volumetric
         debug
         target={target}
-      />
+      /> */}
     </>
   )
 }

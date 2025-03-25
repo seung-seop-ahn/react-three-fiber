@@ -19,6 +19,10 @@ export const MainCanvas = () => {
             background: new Color(0x000000),
         }}
         shadows={"soft"}
+        // shadows={{
+        //     type: THREE.PCFSoftShadowMap,
+        //     enabled: true,
+        // }} 
     >
       <OrbitControls />
       <Lights />
