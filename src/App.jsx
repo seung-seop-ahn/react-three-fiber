@@ -1,11 +1,11 @@
-import './App.css'
+import { MainCanvas } from "./components/MainCanvas";
 
 function App() {
 
   return (
-    <h1>
-      React Three Fiber
-    </h1>
+    <div style={{width: '100vw', height: '100vh'}}>
+      <MainCanvas />
+    </div>
   )
 }
 
