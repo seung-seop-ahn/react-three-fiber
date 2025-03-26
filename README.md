@@ -7,7 +7,8 @@
 ```sh
 $ npm create vite@latest react-three-fiber -- --template react
 $ npm install three @react-three/drei @react-three/fiber
-$ npm i @react-three/postprocessing
+$ npm install @react-three/postprocessing
+$ npm install @react-three/cannon
 ```
 
 ## Usage
@@ -21,6 +22,7 @@ $ npm run dev
 - [React Three Fiber Docs](https://r3f.docs.pmnd.rs/getting-started/introduction)
 - [GLTF to JSX](https://github.com/pmndrs/gltfjsx)
   - `npx gltfjsx public/dancer.glb -o src/components/Dancer.jsx`
+- [Physical engine effect](https://github.com/pmndrs/use-cannon)
 
 ## Author
 
